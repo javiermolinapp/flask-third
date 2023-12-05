@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import os
+import matplotlib
 
 app = Flask(__name__)
 
