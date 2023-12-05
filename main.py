@@ -1,7 +1,4 @@
 from flask import Flask, jsonify
-import matplotlib
-matplotlib.use('Agg')
-from matplotlib import pyplot
 import os
 
 app = Flask(__name__)
