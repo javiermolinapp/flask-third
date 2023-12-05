@@ -1,4 +1,7 @@
 from flask import Flask, jsonify
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib import pyplot
 import os
 
 app = Flask(__name__)
@@ -6,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return jsonify({"Choo Choo": "Hola to your Flask app 🚅"})
 
 
 if __name__ == '__main__':
